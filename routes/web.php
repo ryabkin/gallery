@@ -23,3 +23,4 @@ Route::get('/about','App\Http\Controllers\AboutController@about')->name('about')
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
